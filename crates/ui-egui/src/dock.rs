@@ -113,7 +113,7 @@ impl Group {
 
     /// Tabs that lay out their own scrolling list and footer (they fill the group).
     pub fn scrolls_itself(self, tab: usize) -> bool {
-        matches!((self, tab), (Group::Layers, 0) | (Group::History, 0))
+        matches!((self, tab), (Group::Layers, 0) | (Group::History, 0) | (Group::History, 1))
     }
 
     fn tab_mut(self, tabs: &mut DockTabs) -> &mut usize {
