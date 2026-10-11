@@ -502,3 +502,7 @@ Missing actions, recursive calls and nesting beyond 16 levels fail visibly; a ch
 the parent before its next step. Every nested command retains the normal automation permission check.
 Existing recordings containing expanded commands remain unchanged; remove those steps and record
 the named call again if desired.
+
+Layer-panel **Quick Export as PNG** exports every selected layer as a separate PNG. A single
+Save dialog chooses the first filename; remaining files are numbered siblings with sanitized
+layer names. Selection is captured before opening the dialog; an unselected layer is excluded.
